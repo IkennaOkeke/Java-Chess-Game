@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class ChessGame {
     private Board board; //holds the chessboard
     private Player[] players; //holds the players
@@ -18,7 +14,7 @@ public class ChessGame {
 
     // responsible for starting the chess match
     public void startGame() {
-        System.out.println("Welcome to Java Chess, by Ikenna and Alexander!\nAs per usual in Chess, avoid making impossible moves, as you will be prompted to make a new move.\nAlso, there is no castling or checkmate in this version of Chess, so you will need to capture the king in order to win.\nHave fun!");
+        System.out.println("Welcome to Java Chess, by Ikenna and Alexander!\nAs per usual in Chess, avoid making impossible moves, as you will be prompted to make a new move.\nAlso, there is no castling, en-passant, or checkmate in this version of Chess, so you will need to capture the king in order to win.\nHave fun!");
         board.initialize();
         play();
     }

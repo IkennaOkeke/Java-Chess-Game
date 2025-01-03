@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
-//creates the 8 by 8 chessboard
 class Board {
     private Piece[][] grid;
 
@@ -108,7 +103,14 @@ class Board {
             display.append(row + 1).append(" ");
             for (int col = 0; col < 8; col++) {
                 Piece piece = grid[row][col];
-                display.append(piece != null ? piece.getSymbol() : "·").append("  ");
+                if ((row + col) % 2 == 1) {
+                    display.append("\033[102m");
+                }
+                else {
+                    display.append("\033[43m");
+                }
+                display.append(piece != null ? piece.getSymbol() : "\033[90m ·").append(" ");
+                display.append("\033[0m");
             }
             display.append("\n");
         }

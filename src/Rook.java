@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 class Rook extends Piece {
     public Rook(Colour colour) {
@@ -51,6 +50,6 @@ class Rook extends Piece {
     //unicode characters to represent the rook
     @Override
     public String getSymbol() {
-        return getColour() == Colour.WHITE ? "♖" : "♜";
+        return getColour() == Colour.WHITE ? "\033[37m R" : "\033[30m R";
     }
 }  //end Rook

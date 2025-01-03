@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+
+
+
 
 class Bishop extends Piece {
     public Bishop(Colour colour) {
@@ -51,7 +53,7 @@ class Bishop extends Piece {
     //unicode characters to represent the bishop
     @Override
     public String getSymbol() {
-        return getColour() == Colour.WHITE ? "♗" : "♝";
+        return getColour() == Colour.WHITE ? "\033[37m B" : "\033[30m B";
     }
     
 } //end Bishop

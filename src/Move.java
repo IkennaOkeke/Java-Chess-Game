@@ -1,8 +1,3 @@
-import java.util.Objects;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Move {
     private Position source;
     private Position destination;

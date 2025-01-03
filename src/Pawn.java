@@ -1,10 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 
 class Pawn extends Piece {
-  private Board board;
     public Pawn(Colour colour) {
         super(colour);
     }
@@ -61,7 +59,7 @@ class Pawn extends Piece {
     //unicode characters to represent the pawn
     @Override
     public String getSymbol() {
-        return getColour() == Colour.WHITE ? "♙" : "♟";
+        return getColour() == Colour.WHITE ? "\033[37m P" : "\033[30m P";
     }
     
 } //end Pawn

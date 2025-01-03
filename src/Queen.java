@@ -26,6 +26,6 @@ class Queen extends Piece {
     //unicode characters to represent the queen
     @Override
     public String getSymbol() {
-        return getColour() == Colour.WHITE ? "♕" : "♛";
+        return getColour() == Colour.WHITE ? "\033[37m Q" : "\033[30m Q";
     }
 } //end Queen
