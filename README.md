@@ -5,6 +5,6 @@ To run this program, download JavaChessGame.jar and JavaChessGame.bat if you are
 A preview of the gameplay can be seen below:<br /><br />
 ![](Chess-Program.gif)<br /><br />
 ## Program Structure<br />
-During the creation of this program, we heavily utilized the concepts of OOP and inheritance to make maintenance and understanding easier. The image below describes our thought process:<br /><br />
+During the creation of this program, the concepts of OOP and inheritance were heavily utilized to make maintenance and understanding easier. The image below describes the thought process:<br /><br />
 ![](Program-Chart.png)
 
